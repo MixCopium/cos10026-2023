@@ -60,12 +60,13 @@ sudo mkdir dev
 
 Suppose your XAMPP is installed at the folder `$XAMPP = C:/xampp`:
 
-1. Open the Command prompt at the `$XAMPP` installation folder
-2. Create a symbol link from your code folder to a subfolder under the folder `$SAMPP/htdocs`. Follow the [instructions here](https://www.howtogeek.com/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/) on how to create symbolic link on Windows or Linux. 
+1. Add `$XAMPP/php` to your system's path. This is needed for VSCode to execute `php.exe` from VSCode and on the terminal.
+2. Open the Command prompt at the `$XAMPP` installation folder
+3. Create a symbol link from your code folder to a subfolder under the folder `$SAMPP/htdocs`. Follow the [instructions here](https://www.howtogeek.com/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/) on how to create symbolic link on Windows or Linux. 
    
    Suppose your code folder name is `C:/COS10026/dev`. After this step, you get the link `$XAMPP/htdocs/cos10026` that points to that folder
-3. View your dev directory by pointing your browser to: `http://localhost/cos10026`
-4. Browse and execute your desired PHP script
+4. View your dev directory by pointing your browser to: `http://localhost/cos10026`
+5. Browse and execute your desired PHP script
 
 # Working with your dev folder on VSCode
 - Start VSCode
