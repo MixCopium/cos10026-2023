@@ -1,0 +1,16 @@
+demo
+*.code-workspace
+lects1
+tutes*
+
+#lect07
+#lect08
+lect09
+lect10
+lect11
+lect12-error-handling
+
+util
+wx-files
+wx-oop
+
