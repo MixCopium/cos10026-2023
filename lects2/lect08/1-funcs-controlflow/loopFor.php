@@ -33,8 +33,8 @@ function for1() {
   var_dump($fastFoods);
 
   echo "<br/>";
-  for ($count = 0; $count < $len; $count++) {
-    echo $fastFoods[$count], "<br>";
+  for ($index = 0; $index < $len; $index++) {
+    echo $fastFoods[$index], "<br>";
   }
 }
 ?>
