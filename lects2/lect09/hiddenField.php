@@ -25,7 +25,8 @@
     <p>
       <input type="submit" value="Send request" />
       <!-- use hidden input field to record the state field -->
-      <input type="hidden" name="counter" value="<?= $counter ?>" />
+      <input type="hidden" name="counter" 
+      value="<?= $counter ?>" />
     </p>
   </form>
 </body>

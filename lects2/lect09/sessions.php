@@ -27,6 +27,7 @@
     if (session_status() === PHP_SESSION_NONE) {
       echo "<p style=\"color:red\">Failed to start session!</p>";
     } else {
+      // normal processing with session information
       $sessId = session_id();
       echo "<p>Session id: $sessId</p>";
       print_r($_SESSION);
