@@ -12,6 +12,7 @@ CREATE TABLE inventory (
 insert into inventory values (1, 'Yamaha', 'FG7205', 279.99, 12);
 insert into inventory values (2, 'Toyato', 'TG', 3000.66, 3);
 insert into inventory values(3,"Toyato", "AL", 40000, 15);
+insert into inventory values(4,"VinFast", "VF101", 75000, 45);
 
 select * from inventory order by make, model;
 
