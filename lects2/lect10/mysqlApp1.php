@@ -8,11 +8,17 @@
 </head>
 <body>
 <?php
+  require_once("../util/mysqlToolkit.php");
+
   // step 1: connect
   require_once "settings.php";
   $dbconn = @mysqli_connect ($host, $user, $pwd, $db);
+
   if ($dbconn) {
     // connect: ok
+
+    // alternative: select database after creating the connection
+    // @mysqli_select_db($dbconn, $db);
 
     // step 2: create query
     $query = "SELECT * FROM cars";
@@ -28,7 +34,6 @@
     } else {
       // query error
       echo "<p>Query error";
-      require_once("../util/mysqlToolkit.php");
 
       echo handleFuncError($dbconn);
     }
@@ -37,8 +42,6 @@
     mysqli_close ($dbconn);
   } else {
     // error connecting to database
-    require_once("../util/mysqlToolkit.php");
-
     echo "<p>Unable to connect to the db: $db.</p>";
     echo handleConnError($host);
   }
